@@ -1,41 +1,16 @@
-# Reinhardt AI
+# React + Vite
 
-Dashboard de investimentos brasileiros com front-end em React + Vite, backend em Express e visualizações com Recharts.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Estrutura do projeto
+Currently, two official plugins are available:
 
-- `client/` - frontend React/Vite
-- `server/` - backend Express
-- `package.json` - dependências e scripts principais
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Scripts úteis
+## React Compiler
 
-- `npm install` - instala dependências
-- `npm run dev` - inicia frontend e backend em modo de desenvolvimento
-- `npm run build` - gera o build do frontend
-- `npm run preview` - pré-visualiza o build do frontend
-- `npm start` - inicia apenas o backend
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Rotas básicas do backend
+## Expanding the ESLint configuration
 
-- `GET /api/health`
-- `GET /api/portfolio`
-- `POST /api/chat`
-
-## Navegação principal
-
-A aplicação já possui os principais tabs:
-
-- Dashboard
-- Análise
-- Aportes
-- Renda
-- Metas
-- AI Chat
-- Alertas
-
-## Próximos passos
-
-- implementar autenticação e persistência de dados
-- adicionar integração real de IA
-- construir dashboards de performance e alertas em tempo real
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
